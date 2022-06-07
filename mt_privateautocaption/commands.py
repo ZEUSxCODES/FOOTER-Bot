@@ -12,7 +12,7 @@ USERNAME=Config.BOT_USERNAME
 
 # start_Msg, help_msg, about_msg
 # Team Mo Tect
-MT = "@Mo_Tech_YT"
+MT = "@Pros_Movies_Empire"
 
 
 @Client.on_message(filters.private & filters.command("start"))
@@ -37,7 +37,7 @@ async def callback_data(client, update: CallbackQuery):
 
     if query_data == "heroku":
         buttons = [[
-            InlineKeyboardButton("🖥️ Tutorial Video 🖥️", url="https://youtu.be/p4Z9ZN1lZUk")
+            InlineKeyboardButton("🖥️ Tutorial Video 🖥️", url="t.me/Pros_Movies_Empire")
             ],[
             InlineKeyboardButton("🏠Home", url=f"https://t.me/{USERNAME}?start=start"),
             InlineKeyboardButton("❌️Close", callback_data="motech"),
