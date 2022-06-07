@@ -20,8 +20,8 @@ async def start_meg(client, update):
     text = f"""<b> 👋Hello {update.from_user.mention}\n\nI am an AutoCaption bot\n\nAll you have to do is add me to your channel and I will show you my power\n\nFor more info check help Button\n\n {MT}</b>"""
     reply_markup =  InlineKeyboardMarkup( [[
         InlineKeyboardButton("help↗️", callback_data="heroku"),
-        InlineKeyboardButton("🗣️Group", url="t.me/mo_tech_Group"),
-        InlineKeyboardButton("Channel📢", url="t.me/mo_tech_yt")
+        InlineKeyboardButton("🗣️Group", url="https://t.me/Movies_Samrajya"),
+        InlineKeyboardButton("Channel📢", url="https://t.me/Pros_Movies_Empire")
         ]]
     )
     await update.reply_text(
@@ -54,9 +54,9 @@ async def callback_data(client, update: CallbackQuery):
 
     if query_data == "about":
         buttons = [[
-            InlineKeyboardButton("🗣️Group", url="t.me/mo_tech_Group"),
-            InlineKeyboardButton("Channel📢", url="t.me/mo_tech_yt"),
-            InlineKeyboardButton("📃Bot List", url="https://t.me/Mo_Tech_YT/176")
+            InlineKeyboardButton("🗣️Group", url="https://t.me/Movies_Samrajya"),
+            InlineKeyboardButton("Channel📢", url="https://t.me/Pros_Movies_Empire"),
+            InlineKeyboardButton("📃Bot List", url="https://t.me/Pros_Movies_Empire/1869")
             ],[
             InlineKeyboardButton("🏠Home", url=f"https://t.me/{USERNAME}?start=start"),
             InlineKeyboardButton("🔙Back", callback_data="heroku"),
@@ -66,7 +66,7 @@ async def callback_data(client, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await update.message.edit_text(
-            """<b>➪ Bot Name</b> AutoCaptionBot\n\n➪ <b>Framework : Pyrogram</b>\n\n➪<b> Language : Python</b>\n\n➪<b> Server : Heroku</b> \n\n<b>➪ Version : 2.0.1</b>\n\n<b>➪ Source Code  : <a href="https://github.com/PR0FESS0R-99/PrivateAutoCaption">Touch Me 🤗</a>\n\n➪ Developer :  @PR0FESS0R_99\n\n➪ Credits : <a href="https://github.com/PR0FESS0R-99/PrivateAutoCaption/blob/main/mt_privateautocaption/Credits.md">Credits</a></b>""",
+            """<b>➪ Bot Name</b> AutoCaptionBot\n\n➪ <b>Framework : Pyrogram</b>\n\n➪<b> Language : Python</b>\n\n➪<b> Server : Heroku</b> \n\n<b>➪ Version : 2.0.1</b>\n\n<b>➪ Source Code  : <a href="https://t.me/Pros_Movies_Empire/1869">Touch Me 🤗</a>\n\n➪ Developer :  @Anmol0700\n\n➪ Credits : <a href="https://t.me/Pros_Movies_Empire">Credits</a></b>""",
             reply_markup=reply_markup,
             parse_mode="html"
         )
