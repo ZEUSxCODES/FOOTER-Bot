@@ -21,7 +21,7 @@ async def start_meg(client, update):
     reply_markup =  InlineKeyboardMarkup( [[
         InlineKeyboardButton("help↗️", callback_data="heroku"),
         InlineKeyboardButton("🗣️Group", url="https://t.me/Movies_Samrajya"),
-        InlineKeyboardButton("Channel📢", url="https://t.me/Pros_Movies_Empire")
+        InlineKeyboardButton("Channel📢", url="https://t.me/Film_Nest")
         ]]
     )
     await update.reply_text(
@@ -37,7 +37,7 @@ async def callback_data(client, update: CallbackQuery):
 
     if query_data == "heroku":
         buttons = [[
-            InlineKeyboardButton("🖥️ Tutorial Video 🖥️", url="t.me/Pros_Movies_Empire")
+            InlineKeyboardButton("🖥️ Tutorial Video 🖥️", url="t.me/Film_Nest")
             ],[
             InlineKeyboardButton("🏠Home", url=f"https://t.me/{USERNAME}?start=start"),
             InlineKeyboardButton("❌️Close", callback_data="motech"),
@@ -55,8 +55,8 @@ async def callback_data(client, update: CallbackQuery):
     if query_data == "about":
         buttons = [[
             InlineKeyboardButton("🗣️Group", url="https://t.me/Movies_Samrajya"),
-            InlineKeyboardButton("Channel📢", url="https://t.me/Pros_Movies_Empire"),
-            InlineKeyboardButton("📃Bot List", url="https://t.me/Pros_Movies_Empire/1869")
+            InlineKeyboardButton("Channel📢", url="https://t.me/Film_Nest"),
+            InlineKeyboardButton("📃Bot List", url="https://t.me/Film_Nest/1869")
             ],[
             InlineKeyboardButton("🏠Home", url=f"https://t.me/{USERNAME}?start=start"),
             InlineKeyboardButton("🔙Back", callback_data="heroku"),
@@ -66,7 +66,7 @@ async def callback_data(client, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await update.message.edit_text(
-            """<b>➪ Bot Name</b> AutoCaptionBot\n\n➪ <b>Framework : Pyrogram</b>\n\n➪<b> Language : Python</b>\n\n➪<b> Server : Heroku</b> \n\n<b>➪ Version : 2.0.1</b>\n\n<b>➪ Source Code  : <a href="https://t.me/Pros_Movies_Empire/1869">Touch Me 🤗</a>\n\n➪ Developer :  @Anmol0700\n\n➪ Credits : <a href="https://t.me/Pros_Movies_Empire">Credits</a></b>""",
+            """<b>➪ Bot Name</b> AutoCaptionBot\n\n➪ <b>Framework : Pyrogram</b>\n\n➪<b> Language : Python</b>\n\n➪<b> Server : Heroku</b> \n\n<b>➪ Version : 2.0.1</b>\n\n<b>➪ Source Code  : <a href="https://t.me/Film_Nest/1869">Touch Me 🤗</a>\n\n➪ Developer :  @Anmol0700\n\n➪ Credits : <a href="https://t.me/Film_Nest">Credits</a></b>""",
             reply_markup=reply_markup,
             parse_mode="html"
         )
